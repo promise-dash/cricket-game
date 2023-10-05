@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Game</title>
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="row" id="row">
+
+        <div class="col-sm-4 text-center" id="column1">
+            <h5>Team Score 1</h5>
+            <h2 id="score1">0</h2>
+            <button class="btn btn-primary" id="hit1">HIT 1</button>
+        </div>
+
+        <div class="col-sm-4 text-center" id="column2">
+            <h5>TIMER</h5>
+            <h2 id="timer">60s</h2>
+            <button class="btn btn-primary mt-3" id="restart-btn">Restart</button>
+        </div>
+  
+        <div class="col-sm-4 text-center" id="column3">
+            <h5>Team Score 2</h5>
+            <h2 id="score2">0</h2>
+            <button class="btn btn-primary disabled" id="hit2">HIT 2</button>
+        </div>
+    </div>
+
+    <div class="row mt-5" id="row_table">
+   
+        <div class="col-sm-5 text-center" id="table_column1">
+            <table class="table" id="table1">
+                <thead>
+                    <tr>
+                        <th>Team 1</th>
+                        <th>B1</th>
+                        <th>B2</th>
+                        <th>B3</th>
+                        <th>B4</th>
+                        <th>B5</th>
+                        <th>B6</th>
+                        <th style="color:dodgerblue">Total</th>
+                    </tr>
+                    <tr id="t11"><th>P1</th></tr>
+                    <tr id="t12"><th>P2</th></tr>
+                    <tr id="t13"><th>P3</th></tr>
+                    <tr id="t14"><th>P4</th></tr>
+                    <tr id="t15"><th>P5</th></tr>
+                    <tr id="t16"><th>P6</th></tr>
+                    <tr id="t17"><th>P7</th></tr>
+                    <tr id="t18"><th>P8</th></tr>
+                    <tr id="t19"><th>P9</th></tr>
+                    <tr id="t110"><th>P10</th></tr>
+                </thead>
+            </table>
+        </div>
+
+        
+        <div class="col-sm-2 text-center" id="table_column2">
+            <h3 id="result"></h3>
+        </div>
+
+        <div class="col-sm-5 text-center" id="table_column3">
+            <table class="table" id="table2">
+                <thead>
+                    <tr>
+                        <th>Team 2</th>
+                        <th>B1</th>
+                        <th>B2</th>
+                        <th>B3</th>
+                        <th>B4</th>
+                        <th>B5</th>
+                        <th>B6</th>
+                        <th style="color:dodgerblue">Total</th>
+                    </tr>
+                    <tr id="t21"><th>P1</th></tr>
+                    <tr id="t22"><th>P2</th></tr>
+                    <tr id="t23"><th>P3</th></tr>
+                    <tr id="t24"><th>P4</th></tr>
+                    <tr id="t25"><th>P5</th></tr>
+                    <tr id="t26"><th>P6</th></tr>
+                    <tr id="t27"><th>P7</th></tr>
+                    <tr id="t28"><th>P8</th></tr>
+                    <tr id="t29"><th>P9</th></tr>
+                    <tr id="t210"><th>P10</th></tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
